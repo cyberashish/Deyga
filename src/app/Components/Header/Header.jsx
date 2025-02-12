@@ -4,8 +4,9 @@ import logo from "/public/assets/logo.png";
 import Link from "next/link";
 import MegaMenu from "./MegaMenu";
 import { BABY_PRODUCTS, BEST_SELLER, CHOOSE_MEGAMENU, COSMETICS, FACE_MEGAMENU, HAIR_MEGAMENU, MEN_PRODUCTS, SOAP_MEGAMENU } from "@/app/Constants/header";
-import facebrand_img1 from "/public/assets/Header/Face_category/brand-img1.webp"  
-import facebrand_img3 from "/public/assets/Header/Face_category/brand-img3.webp"
+
+import facebrand_img1 from "/public/assets/token/brand-img1.webp"  
+import facebrand_img3 from "/public/assets/token/brand-img3.webp"
 import hairbrand_img1 from "/public/assets/Header/Hair_Category/brand_img1.png"
 import hairbrand_img2 from "/public/assets/Header/Hair_Category/brand-img2.webp"
 import soapbrand_img1 from "/public/assets/Header/Soap_Category/brand-img1.webp"
