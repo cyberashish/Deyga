@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  :root{
+    --color-primary:#507d3c;
+    --color-secondary:#454545;
+    --color-tertiary:#272323;
+    --color-quaternary:#fff8f3;
+    --color-primaryemphasis:#426732;
+    --color-brown:#813117;
+    --color-lightbrown:#a17c5e;
+    --color-darkgray:#676767;
+    --color-lightgray:#747474;
+    --color-grayvariant:#2d2c2c;
+    --color-bordercolor:#cfcfcf;
+    --color-graysubtle:#9d9d9d;
+    --color-textclr:#1c1b1b;
+    --color-lightsubtle:#f3f5f6;
+    --color-faintgray:#afafaf;
+    --color-modestgray:#3e3e3e;
+    --color-modestlight:#f7f7f7;
+    --color-secondaryemphasis:#373737;
+    --color-grayemphasis:#303030;
+  }
+}
+
+@layer components{
+  .container{
+    @apply 2xl:max-w-[1370px] xl:max-w-7xl lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] max-w-full mx-auto;
+  }
+  .container-md{
+    @apply 2xl:max-w-[1350px] xl:max-w-[1200px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[640px] max-w-full mx-auto;
+  }
+  .container-sm{
+    @apply 2xl:max-w-[1270px] xl:max-w-[1270px] sm:max-w-[640px] max-w-full mx-auto;
+  }
+  .container-xsm{
+    @apply 2xl:max-w-[1170px] xl:max-w-[1270px] sm:max-w-[640px] max-w-full mx-auto;
+  }
+  .container-xs{
+    @apply lg:max-w-[850px] md:max-w-[768px] sm:max-w-[640px] max-w-full mx-auto;
+  }
+  .btn{
+    @apply bg-primary hover:bg-primaryemphasis text-white;
+  }
+  .btn-lg{
+    @apply bg-primary hover:bg-primaryemphasis text-white py-[14px] px-[65px] uppercase rounded-lg font-semibold ;
+  }
+  p{
+    @apply text-textclr text-sm font-medium;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:focus-visible {
+  outline: none;
+}
+
+.advance-dd.open > .modern-menu{
+ background-color: red !important;
+ border: 1px solid red !important;
+}
+.hs-dropdown.open > .hs-dropdown-open\:modern {
+  transform: translate3d(162px, 14px, 0px) !important;
+}
+.hs-dropdown.open > .hs-dropdown-open\:gifting {
+  transform: translate3d(162px, 50.4px, 0px) !important;
+}
+
+
+/* Swiper Css */
+.swiper {
+  width: 100%;
+  height: 510px;
+}
+
+.press_features{
+  .swiper{
+    width: 100%;
+    height: fit-content !important;
+  }
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+span.swiper-pagination-bullet{
+  border: 1px solid #507d3c;
+}
+
+/* Slick Carousel */
+.product-slider .slick-slider {
+  button.slick-next:before {
+      content: url("/assets/Home/mdi-light--chevron-right.png");
+      right: -2px;
+      position: relative;
+  }
+  button.slick-prev:before {
+      content: url("/assets/Home/mdi-light--chevron-left.png");
+      left: -2px;
+      position: relative;
+  }
+  .slick-prev, .slick-next{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+  }
+  .slick-prev{
+    &:hover{
+      padding-right: 6px;
+    }
+    left: -65px;
+  }
+  .slick-next{
+    &:hover{
+      padding-left: 6px;
+    }
+    right: -65px;
+  }
+}
+/* the slides */
+.slick-slide {
+  padding: 0 10px;
+}
+.wrapper{
+  .image-wrapper{
+    position: relative;
+    .test-image{
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s, visibility 0.5s;
+      &.product-img{
+        opacity: 0;
+        visibility: hidden;
+        position:absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+/* the parent */
+
+.test{
+  .image-effect{
+    background-color: #f2f2f200 !important;
+  }
+  .image-title{
+    color: #1c1b1b !important;
+  }
+}
+
+// Swiper Wrapper
+
+.productSwiper{
+  height: 84px !important;
+  .swiper-slide-thumb-active{
+    border: 3px solid #507d3c;
+    border-radius: 8px;
+  }
+}
+
+// Product cart
+.quantEffect{
+  color: var(--color-graysubtle);
+}
+.siblingTrigger:hover ~ .quantEffect{
+  color: var(--color-textclr);
+}
