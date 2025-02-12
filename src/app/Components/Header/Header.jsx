@@ -4,8 +4,8 @@ import logo from "/public/assets/logo.png";
 import Link from "next/link";
 import MegaMenu from "./MegaMenu";
 import { BABY_PRODUCTS, BEST_SELLER, CHOOSE_MEGAMENU, COSMETICS, FACE_MEGAMENU, HAIR_MEGAMENU, MEN_PRODUCTS, SOAP_MEGAMENU } from "@/app/Constants/header";
-import facebrand_img1 from "/public/assets/Header/face_category/brand-img1.webp"
-import facebrand_img3 from "/public/assets/Header/face_category/brand-img3.webp"
+import facebrand_img1 from "/public/assets/Header/Face_category/brand-img1.webp"  
+import facebrand_img3 from "/public/assets/Header/Face_category/brand-img3.webp"
 import hairbrand_img1 from "/public/assets/Header/Hair_Category/brand_img1.png"
 import hairbrand_img2 from "/public/assets/Header/Hair_Category/brand-img2.webp"
 import soapbrand_img1 from "/public/assets/Header/Soap_Category/brand-img1.webp"
@@ -21,7 +21,7 @@ const Header = () => {
   let totalProducts = cartInfo.cartproducts.length;
   return (
     <>
-      <div className="px-6 flex justify-between items-center py-1">
+      <div className="px-6 flex justify-between   items-center   py-1">
         <div className="flex justify-between items-center gap-9">
           <div className="flex gap-4">
             <Icon icon="mage:playstore" className="text-3xl text-black" />
@@ -32,7 +32,7 @@ const Header = () => {
             className="hover:text-primary text-secondary"
             title="Blog"
           >
-            <span className="text-sm font-medium lg:block hidden">Blogs</span>
+            <span className="text-sm font-medium lg:block hidden">Blog</span>
           </Link>
           <Link
             href="/"
